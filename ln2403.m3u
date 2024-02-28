@@ -11,6 +11,8 @@ http://[2409:8087:2001:20:2800:0:df6e:eb13]:80/ott.mobaibox.com/PLTV/4/224/32212
 http://39.134.61.218/PLTV/88888888/224/3221226900/index.m3u8
 #EXTINF:-1,CCTV-6
 http://[2409:8087:2001:20:2800:0:df6e:eb14]:80/ott.mobaibox.com/PLTV/4/224/3221228123/index.m3u8
+#EXTINF:-1,CCTV-7
+http://[2409:8087:1a01:df::4077]/PLTV/88888888/224/3221225671/index.m3u8
 #EXTINF:-1,CCTV-8
 http://[2409:8087:2001:20:2800:0:df6e:eb13]:80/ott.mobaibox.com/PLTV/4/224/3221227473/index.m3u8
 #EXTINF:-1,CCTV-9
@@ -24,7 +26,7 @@ http://[2409:8087:7001:20:3::6]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3
 #EXTINF:-1,CCTV-13
 http://[2409:8087:2001:20:2800:0:df6e:eb17]:80/ott.mobaibox.com/PLTV/4/224/3221227387/index.m3u8
 #EXTINF:-1,CCTV-15
-http://[2409:8087:2001:20:2800:0:df6e:eb22]:80/ott.mobaibox.com/PLTV/4/224/3221228404/index.m3u8
+http://[2409:8087:1a01:df::4077]/PLTV/88888888/224/3221225513/index.m3u8
 #EXTINF:-1,CCTV-16
 http://[2409:8087:2001:20:2800:0:df6e:eb17]:80/ott.mobaibox.com/PLTV/4/224/3221228112/index.m3u8
 #EXTINF:-1,CCTV-5+
