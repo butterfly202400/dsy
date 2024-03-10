@@ -34,11 +34,15 @@ CCTV-4K,http://[2409:8087:2001:20:2800:0:df6e:eb13]:80/ott.mobaibox.com/PLTV/3/2
 辽宁卫视,http://[2409:8087:7000:20::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226201/1.m3u8
 辽宁卫视,http://[2409:8087:7000:20:1000::22]:6060/yinhe/2/ch00000090990000001340/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
 辽宁都市,http://39.134.61.218/PLTV/88888888/224/3221226914/index.m3u8
+辽宁都市,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000610
+辽宁都市,http://42.176.185.28:9901/tsfile/live/1005_1.m3u8
 辽宁体育,http://39.134.61.218/PLTV/88888888/224/3221226916/index.m3u8
+辽宁体育,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000611
 辽宁生活,http://39.134.61.218/PLTV/88888888/224/3221226918/index.m3u8
 辽宁影视,http://39.134.61.218/PLTV/88888888/224/3221226861/index.m3u8
 辽宁教育,http://39.134.61.218/PLTV/88888888/224/3221226863/index.m3u8
 辽宁北方,http://39.134.61.218/PLTV/88888888/224/3221226865/index.m3u8
+沈阳新闻综合,http://httplive.slave.bfgd.com.cn:14311/playurl?playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000059
 南京新闻,http://[2409:8087:2001:20:2800:0:df6e:eb15]:80/ott.mobaibox.com/PLTV/4/224/3221227213/index.m3u8
 南京信息,http://[2409:8087:2001:20:2800:0:df6e:eb11]:80/ott.mobaibox.com/PLTV/4/224/3221227730/index.m3u8
 南京娱乐,http://[2409:8087:2001:20:2800:0:df6e:eb10]:80/ott.mobaibox.com/PLTV/4/224/3221227722/index.m3u8
