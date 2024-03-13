@@ -39,7 +39,6 @@ CCTV-5+,http://[2409:8087:7000:20::203]:80/dbiptv.sn.chinamobile.com/PLTV/888888
 辽宁影视,http://39.134.61.218/PLTV/88888888/224/3221226861/index.m3u8
 辽宁教育,http://39.134.61.218/PLTV/88888888/224/3221226863/index.m3u8
 辽宁北方,http://39.134.61.218/PLTV/88888888/224/3221226865/index.m3u8
-凤凰资讯,http://livetv.skycf.eu.org/live.m3u8?c=2
 湖南卫视,http://[2409:8087:7001:20:3::4]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221225799/index.m3u8
 东方卫视,http://[2409:8087:7001:20:3::6]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221225797/index.m3u8
 天津卫视,http://[2409:8087:7001:20:3::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221226204/index.m3u8
