@@ -9,6 +9,7 @@ CCTV-4,http://39.134.61.218/PLTV/88888888/224/3221226845/index.m3u8
 CCTV-4,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226007/index.m3u8
 CCTV-5,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226019/index.m3u8
 CCTV-5,http://39.134.61.218/PLTV/88888888/224/3221226900/index.m3u8
+CCTV-5,http://39.134.61.218/PLTV/88888888/224/3221226944/index.m3u8
 CCTV-6,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226010/index.m3u8
 CCTV-6,http://39.134.61.218/PLTV/88888888/224/3221226891/index.m3u8
 CCTV-7,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225733/index.m3u8
@@ -16,8 +17,10 @@ CCTV-8,http://39.134.61.218/PLTV/88888888/224/3221226903/index.m3u8
 CCTV-8,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226008/index.m3u8
 CCTV-8,http://[2409:8087:1a01:df::4077]/PLTV/88888888/224/3221225795/index.m3u8
 CCTV-9,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225734/index.m3u8
+CCTV-9,http://39.134.61.218/PLTV/88888888/224/3221226923/index.m3u8
 CCTV-10,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226473/index.m3u8
 CCTV-10,http://39.134.61.218/PLTV/88888888/224/3221226907/index.m3u8
+CCTV-10  1080,http://39.134.61.218/PLTV/88888888/224/3221226966/index.m3u8
 CCTV-11,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226565/index.m3u8
 CCTV-12,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226568/index.m3u8
 CCTV-12,http://39.134.61.218/PLTV/88888888/224/3221226906/index.m3u8
@@ -34,6 +37,7 @@ CCTV-5+,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225603/index.m3u8
 风云剧场,http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226950/index.m3u8
 风云音乐,http://[2409:8087:7001:20:2::3]:80/dbiptv.sn.chinamobile.com/PLTV/88888893/224/3221226953/index.m3u8
 凤凰资讯,http://play-flive.ifeng.com/live/06OLEEWQKN4.m3u8
+辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221227011/index.m3u8
 辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221227082/index.m3u8
 辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221226859/index.m3u8
 辽宁都市,http://39.134.61.218/PLTV/88888888/224/3221226914/index.m3u8
@@ -42,6 +46,9 @@ CCTV-5+,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225603/index.m3u8
 辽宁影视,http://39.134.61.218/PLTV/88888888/224/3221226861/index.m3u8
 辽宁教育,http://39.134.61.218/PLTV/88888888/224/3221226863/index.m3u8
 辽宁北方,http://39.134.61.218/PLTV/88888888/224/3221226865/index.m3u8
+江苏卫视 ,http://39.134.61.218/PLTV/88888888/224/3221227009/index.m3u8
+浙江卫视 ,http://39.134.61.218/PLTV/88888888/224/3221227017/index.m3u8
+东方卫视 ,http://39.134.61.218/PLTV/88888888/224/3221227088/index.m3u8
 咪咕直播-1,http://[2409:8087:1a01:df::4023]/PLTV/88888888/224/3221225611/index.m3u8
 咪咕直播-2,http://[2409:8087:1a01:df::4005]/PLTV/88888888/224/3221225613/index.m3u8
 咪咕直播-3,http://[2409:8087:1a01:df::4017]/PLTV/88888888/224/3221225619/index.m3u8
