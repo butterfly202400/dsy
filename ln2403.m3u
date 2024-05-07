@@ -36,9 +36,9 @@ http://39.134.61.218/PLTV/88888888/224/3221227092/index.m3u8
 #EXTINF:-1,CNN
 https://i.mjh.nz/SamsungTVPlus/GBBD8000016N.m3u8
 #EXTINF:-1,凤凰中文
-https://tv.iill.top/jd/fhzw
+http://113.64.145.93:8081/hls/37/index.m3u8
 #EXTINF:-1,凤凰资讯
-https://tv.iill.top/jd/fhzx
+http://113.64.145.93:8081/hls/36/index.m3u8
 #EXTINF:-1,辽宁卫视
 http://39.134.61.218/PLTV/88888888/224/3221227082/index.m3u8
 #EXTINF:-1,辽宁都市
