@@ -34,15 +34,7 @@ CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221227092/index.m3u8
 家庭剧场,http://[2409:8087:1a0b:df::4007]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225677/index.m3u8
 凤凰卫视,http://kuanglong.vicp.hk:2121/udp/239.93.16.31:8012
 凤凰资讯,http://kuanglong.vicp.hk:2121/udp/239.93.16.118:8708
-凤凰资讯,http://103.95.24.37:880/fhzx.m3u8
-凤凰资讯,http://ax.micaesoft.com/YMitv/YMITV_CN_ifengNEW.m3u8
-凤凰资讯,http://112.19.171.156:9999/udp/239.93.0.118:2191
-凤凰资讯,http://103.95.24.37:880/fhzx.m3u8
-凤凰资讯,http://kuanglong.vicp.hk:2121/udp/239.93.16.118:8708
-凤凰资讯,https://tv.sd.cn/sichuan?id=239.93.0.118:2191
 凤凰资讯,http://www.372583307.top:4022/udp/233.50.200.192:5140
-凤凰资讯,http://vl15191373.imwork.net:8880/udp/239.93.1.4:2191
-凤凰资讯,http://kuanglong.vicp.hk:2121/udp/239.93.16.118:8708
 辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221227082/index.m3u8
 辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221226859/index.m3u8
 辽宁都市,http://39.134.61.218/PLTV/88888888/224/3221226914/index.m3u8
