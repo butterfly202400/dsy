@@ -45,16 +45,11 @@ CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221227092/index.m3u8
 浙江卫视,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226339/index.m3u8
 上海都市,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000012/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000012&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
 上海新闻,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000002000000005/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000005&IASHttpSessionId=OTT19019320240419154124000281&yang-1989
-咪咕直播1,http://ottrrs.hl.chinamobile.com ... 21226398/index.m3u8
-咪咕直播2,http://ottrrs.hl.chinamobile.com ... 21226472/index.m3u8
-咪咕直播3,http://ottrrs.hl.chinamobile.com ... 21226147/index.m3u8
-咪咕直播4,http://ottrrs.hl.chinamobile.com ... 21226469/index.m3u8
-咪咕直播5,http://ottrrs.hl.chinamobile.com ... 21226124/index.m3u8
-咪咕直播6,http://[2409:8087:1a01:df::404d]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8
-咪咕体育7,http://39.134.61.218/PLTV/88888888/224/3221226899/index.m3u8
-咪咕体育8,http://39.134.61.218/PLTV/88888888/224/3221226901/index.m3u8
-咪咕体育9,http://39.134.61.218/PLTV/88888888/224/3221227039/index.m3u8
-咪咕体育10,http://39.134.61.218/PLTV/88888888/224/3221227051/index.m3u8
-咪咕体育11,http://39.134.61.218/PLTV/88888888/224/3221227059/index.m3u8
-咪咕体育12,http://39.134.61.218/PLTV/88888888/224/3221227112/index.m3u8
-咪咕体育13,http://39.134.61.218/PLTV/88888888/224/3221227120/index.m3u8
+咪咕直播1,http://[2409:8087:1a01:df::404d]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226124/index.m3u8
+咪咕体育2,http://39.134.61.218/PLTV/88888888/224/3221226899/index.m3u8
+咪咕体育3,http://39.134.61.218/PLTV/88888888/224/3221226901/index.m3u8
+咪咕体育4,http://39.134.61.218/PLTV/88888888/224/3221227039/index.m3u8
+咪咕体育5,http://39.134.61.218/PLTV/88888888/224/3221227051/index.m3u8
+咪咕体育6,http://39.134.61.218/PLTV/88888888/224/3221227059/index.m3u8
+咪咕体育7,http://39.134.61.218/PLTV/88888888/224/3221227112/index.m3u8
+咪咕体育8,http://39.134.61.218/PLTV/88888888/224/3221227120/index.m3u8
