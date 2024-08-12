@@ -30,9 +30,9 @@ CCTV-16,http://39.134.61.218/PLTV/88888888/224/3221226910/index.m3u8
 CCTV-5+,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225603/index.m3u8
 CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221226912/index.m3u8
 CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221227092/index.m3u8
-风云足球,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638077160c04a/1.m3u8?m3u8_level=2
-央视台球,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN6380775932cff/1.m3u8?m3u8_level=2
-第一剧场,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638077f5ca035/1.m3u8?m3u8_level=2
+家庭剧场,http://[2409:8087:1a0b:df::4007]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225677/index.m3u8
+精品大剧,http://[2409:8087:1a0b:df::4001]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225670/index.m3u8
+明星大片,http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225664/index.m3u8
 辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221227082/index.m3u8
 辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221226859/index.m3u8
 辽宁都市,http://39.134.61.218/PLTV/88888888/224/3221226914/index.m3u8
