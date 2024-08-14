@@ -30,7 +30,7 @@ CCTV-16,http://39.134.61.218/PLTV/88888888/224/3221226910/index.m3u8
 CCTV-5+,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225603/index.m3u8
 CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221226912/index.m3u8
 CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221227092/index.m3u8
-高尔夫网球 ,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226978/index.m3u8
+求索科学,http://[2409:8087:5e08:24::12]:6610/000000001000/2000000004000000011/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000004000000011&IASHttpSessionId=OTT19019320240419154124000281
 精品大剧,http://[2409:8087:1a0b:df::4001]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225670/index.m3u8
 明星大片,http://[2409:8087:1a0b:df::4005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225664/index.m3u8
 辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221227082/index.m3u8
