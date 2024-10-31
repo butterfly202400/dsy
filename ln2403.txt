@@ -53,7 +53,6 @@ CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221227092/index.m3u8
 咪咕体育6,http://39.134.61.218/PLTV/88888888/224/3221227059/index.m3u8
 咪咕体育7,http://39.134.61.218/PLTV/88888888/224/3221227112/index.m3u8
 咪咕体育8,http://39.134.61.218/PLTV/88888888/224/3221227120/index.m3u8
-咪咕
 咪咕直播-1,http://zteres.sn.chinamobile.com:6060/000000001000/3000000001000005308/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000005308&livemode=1&stbId=3
 咪咕直播-2,http://zteres.sn.chinamobile.com:6060/000000001000/3000000001000005969/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000005969&livemode=1&stbId=3
 咪咕直播-3,http://zteres.sn.chinamobile.com:6060/000000001000/3000000001000007218/index.m3u8?channel-id=FifastbLive&Contentid=3000000001000007218&livemode=1&stbId=3
