@@ -61,5 +61,3 @@ CCTV-5+,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225603/index.m3u8
 咪咕体育6,http://39.134.61.218/PLTV/88888888/224/3221227059/index.m3u8
 咪咕体育7,http://39.134.61.218/PLTV/88888888/224/3221227112/index.m3u8
 咪咕体育8,http://39.134.61.218/PLTV/88888888/224/3221227120/index.m3u8
-CCTV4K HEVC 25M,http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000382/index.m3u8?IASHttpSessionId=
-CCTV3 HEVC,http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000371/index.m3u8?IASHttpSessionId=
