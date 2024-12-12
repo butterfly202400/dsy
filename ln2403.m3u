@@ -10,9 +10,9 @@ http://39.134.61.218/PLTV/88888888/224/3221226845/index.m3u8
 #EXTINF:-1,CCTV-5
 http://39.134.136.161:6610/000000001000/1000000005000025222/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000005000025222
 #EXTINF:-1,CCTV-6
-http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000361/index.m3u8?IASHttpSessionId=
+http://39.134.136.161:6610/000000001000/1000000001000001737/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000001000001737
 #EXTINF:-1,CCTV-7
-http://[2409:8087:3c02:0021:0000:0001:0000:100a]:6410/shandong_cabletv.live.zte.com////CHANNEL00000318/index.m3u8?IASHttpSessionId=
+http://39.134.136.161:6610/000000001000/1000000001000024341/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000001000024341
 #EXTINF:-1,CCTV-8
 http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226008/index.m3u8
 #EXTINF:-1,CCTV-9
