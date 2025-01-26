@@ -51,7 +51,7 @@ CGTN记录,http://39.134.136.161:6610/000000001000/7114647837765104058/index.m3u
 辽宁北方,http://39.134.61.218/PLTV/88888888/224/3221226865/index.m3u8
 江苏卫视,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226310/index.m3u8
 浙江卫视,http://[2409:8087:1a01:df::7005]:80/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226339/index.m3u8
-东方卫视,http://39.134.136.161:6610/000000001000/1000000001000005866/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000001000005866
+东方卫视,http://39.134.61.218/PLTV/88888888/224/3221227088/index.m3u8
 东方卫视,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226345/index.m3u8
 咪咕体育2,http://39.134.61.218/PLTV/88888888/224/3221226899/index.m3u8
 咪咕体育3,http://39.134.61.218/PLTV/88888888/224/3221226901/index.m3u8
