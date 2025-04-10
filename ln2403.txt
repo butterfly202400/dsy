@@ -40,6 +40,7 @@ CGTN记录,http://39.134.136.161:6610/000000001000/7114647837765104058/index.m3u
 辽宁卫视,http://39.134.136.161:6610/000000001000/1000000001000001945/index.m3u8?livemode=1&stbId=10&channel-id=ystenlive&Contentid=1000000001000001945
 辽宁卫视,http://39.134.136.161:6610/000000001000/5000000004000011671/index.m3u8?livemode=1&stbId=10&channel-id=bestzb&Contentid=5000000004000011671
 辽宁都市,http://39.134.61.218/PLTV/88888888/224/3221226914/index.m3u8
+辽宁都市,http://39.152.170.32:9901/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
 辽宁体育,http://39.134.61.218/PLTV/88888888/224/3221226916/index.m3u8
 辽宁体育,http://175.148.29.98:9902/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0
 辽宁生活,http://39.134.61.218/PLTV/88888888/224/3221226918/index.m3u8
