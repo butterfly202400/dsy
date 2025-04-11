@@ -32,8 +32,6 @@ CCTV-15,http://39.134.61.218/PLTV/88888888/224/3221226855/index.m3u8
 CCTV-15,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226476/index.m3u8
 CCTV-16,http://39.134.61.218/PLTV/88888888/224/3221226910/index.m3u8
 CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221226912/index.m3u8
-CCTV-5+,http://39.152.170.32:9901/tsfile/live/0130_1.m3u8?key=txiptv&playlive=1&authid=0
-CCTV-5+,http://175.148.29.98:9902/tsfile/live/0121_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221227092/index.m3u8
 CCTV-5+,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225603/index.m3u8
 CGTN记录,http://39.134.136.161:6610/000000001000/7114647837765104058/index.m3u8?livemode=1&stbId=test&channel-id=hnbblive&Contentid=7114647837765104058
@@ -56,7 +54,6 @@ CGTN记录,http://39.134.136.161:6610/000000001000/7114647837765104058/index.m3u
 辽宁影视,http://39.134.61.218/PLTV/88888888/224/3221226861/index.m3u8
 辽宁教育,http://39.134.61.218/PLTV/88888888/224/3221226863/index.m3u8
 辽宁北方,http://39.134.61.218/PLTV/88888888/224/3221226865/index.m3u8
-北京卫视4k,https://hsplay-360.v.btime.com/live_btime/btv_sn_20170706_s41/index.m3u8?time=1743304042&sign=1e760917ce05301c7a04dab0538149d7
 天津卫视,http://175.148.29.98:9902/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
 浙江卫视,http://175.148.29.98:9902/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
 江苏卫视,http://175.148.29.98:9902/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
