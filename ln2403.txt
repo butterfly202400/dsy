@@ -25,7 +25,6 @@ CCTV-11,http://39.135.133.157/wh7f454c46tw2037044632_2010184924/ottrrs.hl.chinam
 CCTV-12,http://39.134.61.218/PLTV/88888888/224/3221226906/index.m3u8
 CCTV-12,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226568/index.m3u8
 CCTV-13,http://39.134.61.218/PLTV/88888888/224/3221226853/index.m3u8
-CCTV-13,http://tvcdn.kkmz.top/itv/5000000011000031108.m3u8?cdn=bestzb
 CCTV-13,http://39.152.170.32:9901/tsfile/live/0013_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-14,http://175.148.29.98:9902/tsfile/live/0014_1.m3u8?key=txiptv&playlive=1&authid=0
 CCTV-15,http://39.134.61.218/PLTV/88888888/224/3221226855/index.m3u8
@@ -37,7 +36,6 @@ CCTV-5+,http://ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225603/index.m3u8
 CGTN记录,http://39.134.136.161:6610/000000001000/7114647837765104058/index.m3u8?livemode=1&stbId=test&channel-id=hnbblive&Contentid=7114647837765104058
 凤凰中文,http://122.117.71.103:8574/http/61.222.53.250:8078/hls/21/80/phoenixch.m3u8?txiptv&playlive
 凤凰中文,http://aktv.top/AKTV/live/aktv/null-3/AKTV.m3u8
-凤凰资讯,http://122.117.71.103:8573/http/61.222.53.250:8078/hls/20/80/phoenixif.m3u8?txiptv&playlive
 凤凰资讯,https://zjtv01.tv12.xyz/%E9%B3%B3%E5%87%B0%E8%B3%87%E8%A8%8A
 凤凰资讯,http://aktv.top/AKTV/live/aktv/null-4/AKTV.m3u8
 辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221227082/index.m3u8
