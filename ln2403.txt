@@ -52,6 +52,7 @@ CGTN记录,http://39.134.136.161:6610/000000001000/7114647837765104058/index.m3u
 天津卫视,http://175.148.29.98:9902/tsfile/live/0135_1.m3u8?key=txiptv&playlive=1&authid=0
 浙江卫视,http://175.148.29.98:9902/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1&authid=0
 江苏卫视,http://175.148.29.98:9902/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
+晴彩篮球,http://itv.iptv1688.top:2016/itv.php?id=睛彩篮球
 咪咕体育2,http://39.134.61.218/PLTV/88888888/224/3221226899/index.m3u8
 咪咕体育3,http://39.134.61.218/PLTV/88888888/224/3221226901/index.m3u8
 咪咕体育4,http://39.134.61.218/PLTV/88888888/224/3221227039/index.m3u8
