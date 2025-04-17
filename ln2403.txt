@@ -40,6 +40,7 @@ CGTN记录,http://39.134.136.161:6610/000000001000/7114647837765104058/index.m3u
 辽宁都市,http://39.134.61.218/PLTV/88888888/224/3221226914/index.m3u8
 辽宁都市,http://39.134.61.219/PLTV/88888888/224/3221226914/index.m3u8
 辽宁都市,http://39.152.170.32:9901/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
+辽宁都市,http://39.152.170.32:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0
 辽宁体育,http://39.134.61.218/PLTV/88888888/224/3221226916/index.m3u8
 辽宁体育,http://39.152.170.32:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0
 辽宁生活,http://39.134.61.218/PLTV/88888888/224/3221226918/index.m3u8
