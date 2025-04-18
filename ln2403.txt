@@ -24,7 +24,6 @@ CCTV-13,http://39.134.64.87:6610/PLTV/88888888/224/3221226011/index.m3u8?IASHttp
 CCTV-13,http://39.134.64.87:6610/PLTV/88888888/224/3221226537/index.m3u8?IASHttpSessionId=
 CCTV-13,http://39.134.64.87:6610/PLTV/88888888/224/3221226571/index.m3u8?IASHttpSessionId=
 CCTV-14,http://nas.suntao.online:35455/gaoma/cctv14.m3u8
-CCTV-14,http://110.42.45.89:35455/itv/1000000005000265013.m3u8?cdn=ystenlive
 CCTV-15,http://39.134.61.218/PLTV/88888888/224/3221226855/index.m3u8
 CCTV-15,http://[2409:8087:1a01:df::7005]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226476/index.m3u8
 CCTV-16,http://39.134.61.218/PLTV/88888888/224/3221226910/index.m3u8
@@ -34,7 +33,6 @@ CGTN记录,http://39.134.136.161:6610/000000001000/7114647837765104058/index.m3u
 凤凰中文,http://php.jdshipin.com:8880/smt.php?id=phoenixtv_hd
 凤凰中文,http://aktv.top/AKTV/live/aktv/null-3/AKTV.m3u8
 凤凰资讯,https://zjtv01.tv12.xyz/%E9%B3%B3%E5%87%B0%E8%B3%87%E8%A8%8A
-凤凰资讯,p3p://167.114.175.6:55331/602c73500002f4d29c90fa1270f21160
 辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221227082/index.m3u8
 辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221226859/index.m3u8
 辽宁卫视,http://39.134.64.87:6610/PLTV/88888888/224/3221226546/index.m3u8?IASHttpSessionId=
@@ -42,6 +40,7 @@ CGTN记录,http://39.134.136.161:6610/000000001000/7114647837765104058/index.m3u
 辽宁都市,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226760/index.m3u8
 辽宁都市,http://39.134.61.219/PLTV/88888888/224/3221226914/index.m3u8
 辽宁都市,http://39.152.170.32:9901/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0
+辽宁都市,http://120.76.248.139/live/bfgd/4200000068.m3u8
 辽宁体育,http://39.134.61.218/PLTV/88888888/224/3221226916/index.m3u8
 辽宁体育,http://39.152.170.32:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0
 辽宁生活,http://39.134.61.218/PLTV/88888888/224/3221226918/index.m3u8
