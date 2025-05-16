@@ -84,8 +84,8 @@ CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221226912/index.m3u8
 CCTV-5+,http://39.134.61.219/PLTV/88888888/224/3221226912/index.m3u8
 CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221227092/index.m3u8
 凤凰中文,https://live.tvfix.org/live/fhzw/index.m3u8
-凤凰资讯,https://live.tvfix.org/live/fhzx/index.m3u8
 凤凰资讯,http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
+凤凰资讯,http://php.jdshipin.com/TVOD/iptv.php?id=fhzx2
 沈阳新闻,http://39.134.61.218/PLTV/88888888/224/3221226924/index.m3u8
 沈阳新闻,http://39.134.61.218/PLTV/88888888/224/3221226593/index.m3u8
 辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221226461/index.m3u8
