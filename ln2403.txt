@@ -86,6 +86,7 @@ CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221227092/index.m3u8
 凤凰中文,https://live.tvfix.org/live/fhzw/index.m3u8
 凤凰中文,http://203.205.191.53/qctv.fengshows.cn/live/0701pcc72.m3u8
 凤凰资讯,http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
+凤凰资讯,http://mx-ll-183.88.244-176.dynamic.3bb.co.th:19984/stream/channelid/627713845?profile=pass
 凤凰资讯,http://jxiptv.dpdns.org/stream/4gtv/null-4/master.m3u8?u=test&p=9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
 凤凰资讯,http://hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221236197/index.m3u8
 凤凰资讯,http://203.205.191.53/qctv.fengshows.cn/live/0701pin72.m3u8
