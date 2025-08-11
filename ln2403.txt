@@ -83,9 +83,7 @@ CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221226445/index.m3u8
 CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221226912/index.m3u8
 CCTV-5+,http://39.134.61.219/PLTV/88888888/224/3221226912/index.m3u8
 CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221227092/index.m3u8
-凤凰中文,http://live.sxrtv.com/iptv/fhzw.flv
-凤凰中文,https://s1.m16tv.cfd/aktv/CH-3/AKTV.m3u8
-凤凰中文,https://live.tvfix.org/live/fhzw/index.m3u8
+CCTV-4k,http://39.134.61.218/PLTV/88888888/224/3221227116/index.m3u8
 凤凰中文,http://203.205.191.53/qctv.fengshows.cn/live/0701pcc72.m3u8
 凤凰资讯,http://s1.an94tv.cfd/aktv/CH-4/AKTV.m3u8
 凤凰资讯,http://live.sxrtv.com/iptv/fhzx.flv
@@ -123,6 +121,9 @@ CCTV-5+,http://39.134.61.218/PLTV/88888888/224/3221227092/index.m3u8
 辽宁北方,http://39.134.61.218/PLTV/88888888/224/3221226515/index.m3u8
 辽宁北方,http://39.134.61.218/PLTV/88888888/224/3221226865/index.m3u8
 辽宁移动,http://39.134.61.218/PLTV/88888888/224/3221226867/index.m3u8
+凤凰中文,http://live.sxrtv.com/iptv/fhzw.flv
+凤凰中文,https://s1.m16tv.cfd/aktv/CH-3/AKTV.m3u8
+凤凰中文,https://live.tvfix.org/live/fhzw/index.m3u8
 第一剧场,http://39.134.61.218/PLTV/88888888/224/3221227144/index.m3u8
 风云剧场,http://39.134.61.218/PLTV/88888888/224/3221227146/index.m3u8
 央视网球,http://39.134.61.218/PLTV/88888888/224/3221227077/index.m3u8
