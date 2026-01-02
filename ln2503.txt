@@ -158,6 +158,14 @@ CHC家庭电影,http://39.134.61.218/PLTV/88888888/224/3221227164/index.m3u8
 四川卫视4k,http://39.134.61.218/PLTV/88888888/224/3221227243/index.m3u8
 湖南卫视4k,http://39.134.61.218/PLTV/88888888/224/3221227245/index.m3u8
 山东卫视4k,http://39.134.61.218/PLTV/88888888/224/3221227249/index.m3u8
+浙江公共新闻,https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8
+浙江国际,https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
+浙江少儿,https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
+浙江教科影视,https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
+之江纪录,https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8
+浙江民生休闲,https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
+浙江经视,https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
+浙江钱江都市,https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 晴彩篮球,http://39.134.61.218/PLTV/88888888/224/3221227075/index.m3u8
 晴彩竞技,http://39.134.61.218/PLTV/88888888/224/3221227138/index.m3u8
 晴彩青少,http://39.134.61.218/PLTV/88888888/224/3221227140/index.m3u8
@@ -198,5 +206,6 @@ CHC家庭电影,http://39.134.61.218/PLTV/88888888/224/3221227164/index.m3u8
 咪咕体育34,http://39.134.61.218/PLTV/88888888/224/3221227120/index.m3u8
 咪咕体育35,http://39.134.61.218/PLTV/88888888/224/3221227122/index.m3u8
 咪咕体育36,http://39.134.61.218/PLTV/88888888/224/3221227124/index.m3u8
+
 
 
