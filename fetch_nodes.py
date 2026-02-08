@@ -1,86 +1,84 @@
 import requests
 import base64
+import re
 from datetime import datetime
 
-# 1. 锁定唯一订阅源
-urls = [
-    "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt"
-]
-
-# 2. 简化的地区映射：严格按你指定的顺序排列
-ORDERED_REGIONS = [
-    ('新加坡', ['SG', 'Singapore', '新加坡', '新']),
-    ('法国', ['FR', 'France', '法国', '法']),
-    ('芬兰', ['FI', 'Finland', '芬兰', '芬']),
-    ('加拿大', ['CA', 'Canada', '加拿大', '加']),
-    ('美国', ['US', 'USA', 'United States', '美国', '美']),
-    ('日本', ['JP', 'Japan', '日本', '日', '东京', '大阪']),
-    ('英国', ['UK', 'United Kingdom', '英国', '英', 'GB']),
-    ('澳大利亚', ['AU', 'Australia', '澳大利亚', '澳', 'SYD']),
-    ('台湾', ['TW', 'Taiwan', '台湾', '台'])
-]
+# 1. 锁定订阅源
+urls = ["https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt"]
 
 def safe_decode(data):
     try:
         data = data.strip()
         if not data: return ""
+        # 补齐 Base64 填充
         missing_padding = len(data) % 4
         if missing_padding: data += '=' * (4 - missing_padding)
         return base64.b64decode(data).decode('utf-8', errors='ignore')
-    except: return data
+    except: return ""
 
-def get_region_index(node_str):
-    """弱化匹配：备注中只要包含关键词就抓取"""
-    if "#" not in node_str: return None, None
-    remark = node_str.split("#")[-1].upper()
-    
-    for index, (name, keywords) in enumerate(ORDERED_REGIONS):
-        for kw in keywords:
-            if kw.upper() in remark:
-                return index, name
-    return None, None
+def extract_country_prefix(remark):
+    """
+    尝试从备注中提取国家前缀（如 HK, US, SG）
+    如果无法识别，则归类为 'OTHER'
+    """
+    # 匹配开头的前两个字母，通常是国家代码
+    match = re.search(r'^([A-Z]{2})', remark.upper())
+    if match:
+        return match.group(1)
+    # 如果包含中文，尝试提取前两个中文字符
+    chinese_match = re.search(r'^([\u4e00-\u9fa5]{1,2})', remark)
+    if chinese_match:
+        return chinese_match.group(1)
+    return "UNKNOWN"
 
 def main():
-    # 使用列表存储各地区的集合（自动去重）
-    region_bins = [set() for _ in ORDERED_REGIONS]
-    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 启动简化版抓取...")
+    # 使用字典存储：{ 'HK': {set of nodes}, 'US': {set of nodes} }
+    country_groups = {}
+    print(f"[{datetime.now().strftime('%H:%M:%S')}] 开始全量抓取所有国家...")
 
     for url in urls:
         try:
             resp = requests.get(url, timeout=15)
             if resp.status_code == 200:
-                content = safe_decode(resp.text)
+                raw_data = resp.text
+                # 判断是否需要 Base64 解码
+                content = safe_decode(raw_data) if "://" not in raw_data[:50] else raw_data
+                
                 for line in content.splitlines():
                     line = line.strip()
-                    if any(line.startswith(p) for p in ['vmess://', 'vless://', 'ss://', 'ssr://', 'trojan://']):
-                        idx, region_name = get_region_index(line)
-                        if idx is not None:
-                            # 提取协议本体，丢弃旧备注
-                            protocol_part = line.split("#")[0]
-                            region_bins[idx].add(protocol_part)
+                    if "://" in line:
+                        # 提取节点信息
+                        parts = line.split("#")
+                        protocol = parts[0]
+                        remark = parts[1] if len(parts) > 1 else "NoName"
+                        
+                        # 识别国家
+                        country = extract_country_prefix(remark)
+                        
+                        if country not in country_groups:
+                            country_groups[country] = set()
+                        country_groups[country].add(protocol)
         except Exception as e:
-            print(f"请求失败: {e}")
+            print(f"抓取失败: {e}")
 
     final_nodes = []
-    # 按照国家顺序提取并重新生成带编号的备注
-    for idx, (region_name, _) in enumerate(ORDERED_REGIONS):
-        nodes = sorted(list(region_bins[idx]))
+    # 按国家代码字母顺序排列
+    for country in sorted(country_groups.keys()):
+        nodes = sorted(list(country_groups[country]))
         for i, protocol in enumerate(nodes, 1):
-            # 格式：国家名称 01
-            new_node = f"{protocol}#{region_name} {i:02d}"
-            final_nodes.append(new_node)
+            # 格式：国家代码 01
+            final_nodes.append(f"{protocol}#{country} {i:02d}")
 
-    # 保存明文预览文件
+    # 写入预览文件
     with open("nodes_plain.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(final_nodes))
     
-    # 保存加密订阅文件
+    # 写入加密订阅文件
     final_content = "\n".join(final_nodes)
-    final_b64 = base64.b64encode(final_content.encode('utf-8')).decode('utf-8')
     with open("sub_link.txt", "w", encoding="utf-8") as f:
-        f.write(final_b64)
+        f.write(base64.b64encode(final_content.encode('utf-8')).decode('utf-8'))
     
-    print(f"抓取完成！共捕获目标地区节点: {len(final_nodes)} 个")
+    print(f"全量抓取完成！共捕获来自 {len(country_groups)} 个地区的 {len(final_nodes)} 个节点。")
 
 if __name__ == "__main__":
     main()
