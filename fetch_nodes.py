@@ -5,7 +5,7 @@ from datetime import datetime
 
 # 1. 锁定唯一订阅源
 urls = [
-    "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt"
+    "https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray"
 ]
 
 # 2. 增强版：严格按顺序排列的国家/地区关键词映射
