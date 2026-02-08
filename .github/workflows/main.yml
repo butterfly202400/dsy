@@ -1,33 +1,49 @@
 name: Auto Fetch Nodes
 
+# 设置触发条件
 on:
   schedule:
-    - cron: '0 */2 * * *' # 每 2 小时运行一次
-  workflow_dispatch:      # 允许手动触发
+    # 每 30 分钟运行一次 (*/30)
+    - cron: '*/30 * * * *'
+  # 允许在 Actions 页面手动点击运行
+  workflow_dispatch:      
 
+# 任务配置
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    # 授予写入权限，以便脚本能更新仓库中的 txt 文件
+    permissions:
+      contents: write
+
     steps:
+      # 1. 检出仓库代码
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # 2. 安装 Python 环境
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
+      # 3. 安装脚本运行依赖
       - name: Install dependencies
         run: pip install requests
 
+      # 4. 执行抓取与排序脚本
       - name: Run fetch script
         run: python fetch_nodes.py
 
+      # 5. 提交并推送更改到仓库
       - name: Commit and Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # 添加生成的文件
           git add sub_link.txt nodes_plain.txt
-          git commit -m "自动更新节点并排序: $(date)" || exit 0
+          # 只有在文件有变动时才提交，避免报错
+          git commit -m "自动更新节点列表: $(date +'%Y-%m-%d %H:%M:%S')" || exit 0
           git push
 
