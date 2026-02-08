@@ -3,8 +3,12 @@ import base64
 import re
 from datetime import datetime
 
-# 1. 订阅源
+# 1. 订阅源（已补充你提供的 4 个新地址）
 urls = [
+    "https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray",
+    "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt",
+    "https://raw.githubusercontent.com/free-nodes/v2rayfree/main/v202602072",
+    "https://ghfast.top/https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt",
     "https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/all_extracted_configs.txt",
     "https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/All_Configs_Sub.txt",
     "https://raw.githubusercontent.com/barry-far/V2ray-Config/main/Sub1.txt",
@@ -14,7 +18,7 @@ urls = [
     "https://raw.githubusercontent.com/freefq/free/master/v2"
 ]
 
-# 2. 允许的地区及关键词
+# 2. 允许的地区及关键词（包含芬兰及其他 9 个地区）
 ALLOWED_REGIONS = {
     '美国': ['US', 'USA', 'United States', '美国', '美'],
     '香港': ['HK', 'Hong Kong', '香港', '港'],
@@ -28,6 +32,9 @@ ALLOWED_REGIONS = {
     '芬兰': ['FI', 'Finland', '芬兰', '芬']
 }
 
+# 3. 广告关键词
+AD_KEYWORDS = ["加入频道", "订阅说明", "广告", "收费", "频道", "t.me", "Fixed by", "Owner", "免费"]
+
 def safe_decode(data):
     try:
         data = data.strip()
@@ -37,18 +44,20 @@ def safe_decode(data):
     except: return data
 
 def get_region(node_str):
+    """识别节点所属地区"""
     upper_node = node_str.upper()
-    for region, keywords in ALLOWED_REGIONS.items():
-        for kw in keywords:
-            if "#" in upper_node:
-                if kw.upper() in upper_node.split("#")[-1]:
+    if "#" in upper_node:
+        remark = upper_node.split("#")[-1]
+        for region, keywords in ALLOWED_REGIONS.items():
+            for kw in keywords:
+                if kw.upper() in remark:
                     return region
     return None
 
 def main():
-    # 使用字典按地区存放节点，方便后续排序编号
+    # 使用字典归类节点： { '美国': {协议1, 协议2}, '香港': {协议1} }
     region_groups = {r: set() for r in ALLOWED_REGIONS.keys()}
-    print(f"[{datetime.now()}] 启动排序编号程序...")
+    print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 正在抓取并按地区排序...")
 
     for url in urls:
         try:
@@ -60,29 +69,30 @@ def main():
                     if any(line.startswith(p) for p in ['vmess://', 'vless://', 'ss://', 'ssr://', 'trojan://']):
                         reg = get_region(line)
                         if reg:
-                            # 暂时只存协议部分，去掉旧备注
+                            # 提取协议部分，清洗旧备注
                             protocol_part = line.split("#")[0]
                             region_groups[reg].add(protocol_part)
         except: continue
 
     final_nodes = []
-    # 按照地区遍历并重新编号
+    # 按照地区名称排序并重新生成带编号的备注
     for region in sorted(region_groups.keys()):
-        nodes = sorted(list(region_groups[region])) # 协议排序去重
+        nodes = sorted(list(region_groups[region]))
         for i, protocol in enumerate(nodes, 1):
-            # 重新命名格式：地区 编号
+            # 格式： 地区 01
             new_node = f"{protocol}#{region} {i:02d}"
             final_nodes.append(new_node)
 
-    # 保存
+    # 保存明文
     with open("nodes_plain.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(final_nodes))
     
+    # 保存加密订阅
     final_b64 = base64.b64encode("\n".join(final_nodes).encode('utf-8')).decode('utf-8')
     with open("sub_link.txt", "w", encoding="utf-8") as f:
         f.write(final_b64)
     
-    print(f"处理完成，总节点数: {len(final_nodes)}")
+    print(f"任务完成！共捕获目标地区节点: {len(final_nodes)} 个")
 
 if __name__ == "__main__":
     main()
