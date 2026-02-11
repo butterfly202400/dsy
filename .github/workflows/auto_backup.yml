@@ -8,6 +8,11 @@ on:
 jobs:
   backup:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    strategy:
+      fail-fast: false
+      max-parallel: 1
 
     steps:
       - name: Checkout repository
@@ -18,8 +23,16 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Run backup script
-        run: python auto_backup.py
+      # ===== 自动重试3次核心逻辑 =====
+      - name: Run backup script (retry 3 times)
+        run: |
+          for i in 1 2 3
+          do
+            echo "第 $i 次尝试..."
+            python auto_backup.py && break
+            echo "失败，等待5秒重试..."
+            sleep 5
+          done
 
       - name: Commit and push backup
         run: |
