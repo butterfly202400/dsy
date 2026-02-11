@@ -2,7 +2,7 @@ name: Auto Backup TXT & M3U
 
 on:
   schedule:
-    - cron: '0 17 * * *'   # 北京时间01:00
+    - cron: '0 16 * * *'   # 北京时间 00:00
   workflow_dispatch:
 
 jobs:
