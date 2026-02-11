@@ -1,0 +1,30 @@
+name: Auto Backup TXT & M3U
+
+on:
+  schedule:
+    - cron: '0 17 * * *'   # 北京时间01:00
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run backup script
+        run: python auto_backup.py
+
+      - name: Commit and push backup
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add backup
+          git commit -m "Auto backup $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes"
+          git push
