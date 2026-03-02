@@ -1,43 +1,43 @@
-name: Auto Backup TXT & M3U
+name: Auto Backup (Every 12h Check)
 
 on:
   schedule:
-    - cron: '0 16 * * *'   # 北京时间 00:00
-  workflow_dispatch:
+    # 每 12 小时检查一次 (北京时间 04:00 和 16:00 左右)
+    - cron: '0 */12 * * *'
+  workflow_dispatch: # 支持手动点击运行
 
 jobs:
-  backup:
+  backup-job:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-
-    strategy:
-      fail-fast: false
-      max-parallel: 1
+    permissions:
+      contents: write # 必须赋予写入权限
 
     steps:
-      - name: Checkout repository
+      - name: 检出仓库代码
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 获取完整历史以确保 rebase 成功
 
-      - name: Setup Python
+      - name: 设置 Python 环境
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.10'
 
-      # ===== 自动重试3次核心逻辑 =====
-      - name: Run backup script (retry 3 times)
-        run: |
-          for i in 1 2 3
-          do
-            echo "第 $i 次尝试..."
-            python auto_backup.py && break
-            echo "失败，等待5秒重试..."
-            sleep 5
-          done
+      - name: 运行备份脚本
+        run: python auto_backup.py
 
-      - name: Commit and push backup
+      - name: 提交并推送更改
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add backup
-          git commit -m "Auto backup $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes"
-          git push
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # 检查是否有内容变化（包括 backup_state.json 的更新）
+          git add backup/
+          if git diff --staged --quiet; then
+            echo "脚本判断未到备份时间，仓库无变化。"
+          else
+            git commit -m "Auto Backup: $(date +'%Y-%m-%d %H:%M:%S') [skip ci]"
+            # 关键步骤：先拉取再推送，防止冲突
+            git pull --rebase origin main
+            git push origin main
+          fi
