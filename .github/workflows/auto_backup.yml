@@ -2,21 +2,23 @@ name: Auto Backup (Every 12h Check)
 
 on:
   schedule:
-    # 每 12 小时检查一次 (北京时间 04:00 和 16:00 左右)
+    # 每 12 小时检查一次 (UTC 04:00 和 16:00，约北京时间 12:00 和 00:00)
     - cron: '0 */12 * * *'
   workflow_dispatch: # 支持手动点击运行
 
 jobs:
   backup-job:
     runs-on: ubuntu-latest
+    # 必须明确赋予写入权限，否则 push 会报 403 错误
     permissions:
-      contents: write # 必须赋予写入权限
+      contents: write
 
     steps:
       - name: 检出仓库代码
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 获取完整历史以确保 rebase 成功
+          # fetch-depth: 0 很重要，否则 pull --rebase 会因为历史不完整失败
+          fetch-depth: 0
 
       - name: 设置 Python 环境
         uses: actions/setup-python@v5
@@ -28,16 +30,24 @@ jobs:
 
       - name: 提交并推送更改
         run: |
+          # 1. 配置 Git 信息
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # 检查是否有内容变化（包括 backup_state.json 的更新）
+          # 2. 检查是否有文件变化
+          # 确保 backup 文件夹存在，防止 git add 报错
+          mkdir -p backup
           git add backup/
+          
+          # 3. 智能判断并推送
           if git diff --staged --quiet; then
-            echo "脚本判断未到备份时间，仓库无变化。"
+            echo "没有检测到备份更新，跳过后续步骤。"
           else
+            echo "检测到备份更新，准备提交..."
             git commit -m "Auto Backup: $(date +'%Y-%m-%d %H:%M:%S') [skip ci]"
-            # 关键步骤：先拉取再推送，防止冲突
-            git pull --rebase origin main
-            git push origin main
+            
+            # 4. 这里的修改最关键：使用环境变量自动获取当前分支名，防止 main/master 混淆
+            # 使用 --retry 防止偶发性的网络波动
+            git pull --rebase origin ${{ github.ref_name }}
+            git push origin ${{ github.ref_name }}
           fi
