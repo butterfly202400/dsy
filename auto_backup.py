@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-自动备份 .txt / .m3u 文件，保留最近30份，每72小时备份一次。
+自动备份 .txt / .m3u 文件，保留最近15份，每15天备份一次。
 支持通过环境变量 FORCE_BACKUP=true 强制立即备份（用于手动触发）。
 """
 import os
@@ -13,8 +13,8 @@ import sys
 BACKUP_DIR = "backup"
 LOG_FILE = os.path.join(BACKUP_DIR, "backup_log.txt")
 STATE_FILE = os.path.join(BACKUP_DIR, "backup_state.json")
-KEEP_LATEST = 30                 # 保留的最新备份份数（从15改为30）
-INTERVAL_HOURS = 72               # 备份间隔（小时）（从70改为72）
+KEEP_LATEST = 15                 # 保留的最新备份份数
+INTERVAL_HOURS = 360             # 备份间隔（小时），15天 = 360小时
 
 os.makedirs(BACKUP_DIR, exist_ok=True)
 
@@ -27,7 +27,7 @@ force_backup = os.environ.get("FORCE_BACKUP", "").lower() == "true"
 if force_backup:
     print("🚀 检测到 FORCE_BACKUP=true，将忽略间隔限制，强制备份！")
 
-# ===== 检查 .gitignore 是否忽略 backup 目录（可能导致提交失败）=====
+# ===== 检查 .gitignore 是否忽略 backup 目录 =====
 gitignore_path = ".gitignore"
 if os.path.exists(gitignore_path):
     with open(gitignore_path, "r", encoding="utf-8") as f:
@@ -55,7 +55,7 @@ if os.path.exists(STATE_FILE) and not force_backup:
 # ===== 判断是否需要备份 =====
 if not force_backup and last_backup_time and diff_hours < INTERVAL_HOURS:
     print(f"当前间隔 {diff_hours:.1f} 小时 < {INTERVAL_HOURS} 小时，跳过本次备份。")
-    sys.exit(0)   # 正常退出，不触发工作流失败
+    sys.exit(0)
 
 print(f"开始备份：距离上次已过 {diff_hours:.1f} 小时 (或强制备份/首次备份)...")
 
