@@ -1,13 +1,13 @@
-name: Auto Backup (Every 3h Check)
+name: Auto Backup (15-day interval)
 
 on:
   schedule:
-    # 每 3 小时触发一次 (UTC 时间，对应北京时间 +8)
-    - cron: '0 */3 * * *'
+    # 北京时间每天凌晨 01:00 触发一次检查（UTC 时间 17:00）
+    - cron: '0 17 * * *'
   workflow_dispatch:
     inputs:
       force:
-        description: '强制立即备份（忽略间隔）'
+        description: '强制立即备份（忽略15天间隔）'
         required: true
         default: false
         type: boolean
