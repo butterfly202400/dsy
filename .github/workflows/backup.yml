@@ -25,12 +25,12 @@ jobs:
           echo "北京时间: $(TZ='Asia/Shanghai' date)"
 
       - name: 检出代码
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5   # 升级至 v5，支持 Node.js 24
         with:
           fetch-depth: 0
 
       - name: 设置 Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6   # 升级至 v6，支持 Node.js 24
         with:
           python-version: '3.10'
 
