@@ -65,11 +65,11 @@ CCTV-4K,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227623/index.m3u8
 沈阳新闻,http://39.134.61.219/PLTV/88888888/224/3221227273/index.m3u8
 沈阳新闻,http://39.134.61.218/PLTV/88888888/224/3221227273/index.m3u8
 沈阳新闻,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227584/index.m3u8
+辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221227175/index.m3u8
+辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221226425/index.m3u8
 辽宁卫视,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227570/index.m3u8
 辽宁卫视,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221226689/index.m3u8
 辽宁卫视,http://hwottcdn.ln.chinamobile.com/PLTV/11/224/3221227609/index.m3u8
-辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221227175/index.m3u8
-辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221226425/index.m3u8
 辽宁卫视,http://39.134.61.218/PLTV/88888888/224/3221227184/index.m3u8
 辽宁卫视,http://39.134.61.219/PLTV/88888888/224/3221227184/index.m3u8
 辽宁卫视,http://39.134.61.219/PLTV/88888888/224/3221227231/index.m3u8
